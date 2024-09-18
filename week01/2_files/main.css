@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap');
+
+* {
+    --headlines_font: 'Lora', serif;
+    --body_font: 'Helvetica', sans-serif;
+    --main_color: #333;
+    --lightgray: #d0d0d0;
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+    color: var(--main_color);
+}
+
+main {
+    font-family: var(--body_font);
+}
+
+h1,
+h2 {
+    font-family: var(--headlines_font);
+
+}
+
+h1 {
+    border-bottom: ridge 1pt var(--lightgray);
+    margin: 1rem auto auto 1rem;
+    padding-bottom: 1rem;
+    font-size: 3rem;
+}
+
+h1,
+nav {
+    text-align: center;
+
+}
+
+h1 a {
+    text-decoration: none;
+    color: var(--main_color);
+}
+
+nav ul {
+
+    margin: 0%;
+    padding: 0%;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 1.2rem;
+    margin: .5rem;
+}
+
+nav ul li a,
+nav ul li a:visited {
+    font-family: var(--headlines_font);
+    color: #666;
+    text-decoration: none;
+}
+
+h2 a,
+p a {
+    font-family: var(--headlines_font);
+    color: var(--main_color);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    font-family: var(--headlines_font);
+    color: #00ddff;
+}
+
+nav ul li a:active {
+    font-family: var(--headlines_font);
+    color: #DEB887;
+}
+
+nav,
+.post-date {
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.post-date {
+    text-align: right;
+    padding: 1rem 0;
+    border-bottom: ridge 1pt var(--lightgray);
+    border-top: ridge 1pt var(--lightgray);
+}
+
+main figure img {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main p {
+    line-height: 1rem;
+    font-weight: bold;
+}
+
+/** Large **/
+
+@media screen and (min-width: 40em) {
+    h1 {
+        padding-top: 2%;
+        padding-bottom: 5%;
+    }
+
+    section {
+        border-bottom: ridge 1pt var(--lightgray);
+    }
+
+    nav {
+        border-bottom: ridge 1pt var(--lightgray);
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+
+    main {
+        margin-top: 1rem;
+    }
+
+    main article {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+
+
+    .post-content {
+        border-left: ridge 1pt var(--lightgray);
+    }
+
+    .post-date,
+    h2,
+    p {
+        padding: 1rem 1rem;
+        margin-top: 0%;
+        border: none;
+    }
+
+    .post-date {
+        font-size: x-large;
+        margin-top: .2rem;
+    }
+
+}

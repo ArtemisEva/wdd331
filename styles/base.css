@@ -21,111 +21,6 @@ header div {
     padding: 10px;
 }
 
-header div img {
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px;
-    width: 77px;
-    height: 100px;
-}
-
-header span {
-    color: white;
-    font-size: 50px;
-}
-
-/* Dark mode */
-body.dark-mode {
-    background-color: #333333;
-    color: #ffffff;
-
-}
-
-body.dark-mode a {
-    color: white;
-}
-
-#dark-mode-toggle {
-    background: transparent;
-    border: none;
-    position: absolute;
-    top: 0;
-    right: 2vw;
-    cursor: pointer;
-}
-
-.hero {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-
-
-}
-
-.herolabel {
-    position: absolute;
-    bottom: 5%;
-    left: 0;
-    right: 0;
-
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 1rem;
-    text-align: center;
-}
-
-.herolabel h1 {
-
-    margin: 0;
-    padding: .25rem;
-    font-weight: 600;
-    font-size: 2rem;
-    font-family: "Great Vibes", serif;
-    color: white;
-    text-shadow: 2px 2px rgb(87, 87, 87);
-}
-
-.hero picture {
-    width: 100%;
-}
-
-.hero img {
-    width: 90%;
-    height: auto;
-    object-fit: cover;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1200px;
-}
-
-#menu {
-    font-size: 2rem;
-    border: none;
-    padding: 3px 7px 6px;
-    background: none;
-    color: #ffffff;
-    cursor: pointer;
-}
-
-#menu::before {
-    content: "\2630";
-}
-
-#menu.open::before {
-    content: "\00d7";
-}
-
-ul.navigation.open {
-    display: block;
-    justify-content: center;
-    font-size: 24px;
-    list-style-type: none;
-}
-
-nav .active {
-    background-color: rgba(0, 0, 0, 0.5)
-}
-
 table {
     font-size: 24px;
     padding: 1rem;
@@ -134,33 +29,7 @@ table {
 
 td:first-child {
     font-weight: bold;
-    width: 4em;
-}
-
-ul.navigation a:hover {
-    background-color: rgb(26, 52, 107);
-    border: 3px solid black;
-    color: rgb(0, 168, 8);
-}
-
-nav {
-    background-color: rgba(0, 0, 0, 0.829);
-}
-
-ul.navigation li a {
-    display: block;
-    padding: .75rem 2vw;
-    list-style-type: none;
-    color: white;
-    text-decoration: none;
-    flex-direction: column;
-    padding: 10px;
-    text-align: center;
-    border: 3px solid transparent;
-}
-
-ul.navigation {
-    display: none;
+    width: 5em;
 }
 
 main {
@@ -170,20 +39,6 @@ main {
     margin-left: auto;
     margin-right: auto;
     max-width: 1200px;
-}
-
-.blocks {
-    max-width: 1200px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto auto auto;
-    margin: 0 auto;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-main hr {
-    margin: 0px 1px;
 }
 
 main h1 {
@@ -197,47 +52,12 @@ main .block {
     margin: 0px 1px;
 }
 
-main .block ul {
-    padding: 10px 20px 10px;
-}
-
-main .block p {
-    padding: 10px 20px 10px;
-    text-align: center;
-    font-size: 21px;
-}
-
 .block a {
     color: black;
 }
 
 .block a:hover {
     color: rgb(0, 168, 8);
-}
-
-.card {
-    border: 1px solid navy;
-    background-color: rgb(211, 225, 255);
-    text-align: center;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
-}
-
-.card h3 {
-    color: navy;
-    margin: 1rem 0;
-}
-
-.card #description {
-    text-transform: capitalize;
-    color: navy;
-    margin: .3rem 0;
-}
-
-.card #temperature {
-    font-size: 2rem;
-    color: navy;
-    margin: .3rem 0;
 }
 
 main h2 {
@@ -247,28 +67,6 @@ main h2 {
     color: white;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
-}
-
-main li {
-    list-style: none;
-    font-size: 21px;
-}
-
-main li a {
-    text-decoration: none;
-}
-
-.googlemap {
-    padding-bottom: 50%;
-    position: relative;
-}
-
-.googlemap iframe {
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    position: absolute;
 }
 
 footer {
